@@ -1,0 +1,13 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: til_development
+  pool: 5
+  username: rigelstpierre
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: til_test
+  pool: 5
+  username: rigelstpierre

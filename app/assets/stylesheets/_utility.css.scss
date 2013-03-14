@@ -1,0 +1,44 @@
+// colors
+$grey: #b6b5b5;
+$green: #b6ecca;
+$peach: #fee3d8;
+$pink: #ff3682;
+
+$nov-reg: "nov-reg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$nov-med: "nov-med", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ostrich: "ostrich", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// fonts
+@font-face {
+	font-family: "nov-reg";
+	src: url('../fonts/nov-reg.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/nov-reg.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('../fonts/nov-reg.woff') format('woff'), /* Modern Browsers */
+	     url('../fonts/nov-reg.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: "nov-med";
+	src: url('../fonts/nov-med.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/nov-med.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('../fonts/nov-med.woff') format('woff'), /* Modern Browsers */
+	     url('../fonts/nov-med.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: "ostrich";
+	src: url('../fonts/ostrich-light-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/ostrich-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('../fonts/ostrich-light-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('../fonts/ostrich-light-webfont.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+
+// mixins
+@mixin opacity($trans) {
+  filter: alpha(opactiy=($trans * 100));
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opactiy=#{$trans * 100})";
+  -moz-opacity: $trans;
+  -khtml-opacity: $trans;
+  opacity: $trans;
+}
