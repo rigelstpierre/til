@@ -1,37 +1,38 @@
-<h1>Listing vendors</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Slug</th>
-    <th>Email</th>
-    <th>Website</th>
-    <th>Blog</th>
-    <th>Facebook</th>
-    <th>Twitter</th>
-    <th>Pineterest</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
 <% @vendors.each do |vendor| %>
-  <tr>
-    <td><%= vendor.name %></td>
-    <td><%= vendor.slug %></td>
-    <td><%= vendor.email %></td>
-    <td><%= vendor.website %></td>
-    <td><%= vendor.blog %></td>
-    <td><%= vendor.facebook %></td>
-    <td><%= vendor.twitter %></td>
-    <td><%= vendor.pineterest %></td>
-    <td><%= link_to 'Show', vendor %></td>
-    <td><%= link_to 'Edit', edit_vendor_path(vendor) %></td>
-    <td><%= link_to 'Destroy', vendor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+
 <% end %>
-</table>
+    <div class="til-left">
+      <div class="med">
+        <p class="fav">favorite</p>
+        <a href="#">
+          <img src="/assets/thumb-med.jpg" alt="thumb-med" width="290" height="250">
+          <span>Jason &amp; Anna Photography</span>
+        </a>
+      </div>
+      <div class="med">
+        <a href="#">
+          <img src="/assets/thumb-med.jpg" alt="thumb-med" width="290" height="250">
+          <span>Jason &amp; Anna Photography</span>
+        </a>
+      </div>
+      <div class="small">
+        <a href="#">
+          <img src="/assets/til-thumb.jpg" alt="til-thumb" width="184" height="157">
+          <span>Jason &amp; Anna Photography</span>
+        </a>
+      </div>
+      <div class="small">
+        <a href="#">
+          <img src="/assets//til-thumb.jpg" alt="til-thumb" width="184" height="157">
+          <span>Jason &amp; Anna Photography</span>
+        </a>
+      </div>
+      <div class="small">
+        <a href="#">
+          <img src="/assets/til-thumb.jpg" alt="til-thumb" width="184" height="157">
+          <span>Jason &amp; Anna Photography</span>
+        </a>
+      </div>
 
-<br />
+    </div>
 
-<%= link_to 'New Vendor', new_vendor_path %>
