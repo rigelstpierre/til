@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
+ruby "2.0.0"
 
 gem 'rails', '3.2.12'
 
-gem 'pg'
+gem 'pg'                #Postgres Database
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -13,10 +14,9 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'simple_form'
 
-gem 'friendly_id'
-
-
-gem "rmagick"
-gem "carrierwave"
+gem 'simple_form'       #Form system
+gem 'devise'            #User sign up/in/out
+gem 'friendly_id'       #Slugify's
+gem "rmagick"           #Image manipulation
+gem "carrierwave"       #Image upload
