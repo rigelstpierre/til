@@ -13,4 +13,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'bourbon'
+gem 'simple_form'
+
+gem 'friendly_id'
+
+
+gem "rmagick"
+gem "carrierwave"

@@ -1,45 +1,97 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @vendor.name %>
-</p>
+  <!-- portfolio -->
+  <div class="container">
+    <section class="gallery">
+      <h1><%= @vendor.name %></h1>
+      <h2>Event designer in San Francisco, CA</h2>
 
-<p>
-  <b>Slug:</b>
-  <%= @vendor.slug %>
-</p>
+      <figure class="hero">
+        <img src="/assets/portfolio-hero.jpg" alt="portfolio-hero" width="600" height="400">
+      </figure>
 
-<p>
-  <b>Email:</b>
-  <%= @vendor.email %>
-</p>
+      <ul class="thumbs">
+        <li>
+          <a href="#"><img src="/assets/portfolio-thumb.jpg" alt="portfolio-thumb" width="135" height="115"></a>
+        </li>
+        <li>
+          <a href="#"><img src="/assets/portfolio-thumb.jpg" alt="portfolio-thumb" width="135" height="115"></a>
+        </li>
+        <li>
+          <a href="#"><img src="/assets/portfolio-thumb.jpg" alt="portfolio-thumb" width="135" height="115"></a>
+        </li>
+        <li>
+          <a href="#"><img src="/assets/portfolio-thumb.jpg" alt="portfolio-thumb" width="135" height="115"></a>
+        </li>
+        <li>
+          <a href="#"><img src="/assets/portfolio-thumb.jpg" alt="portfolio-thumb" width="135" height="115"></a>
+        </li>
+        <li>
+          <a href="#"><img src="/assets/portfolio-thumb.jpg" alt="portfolio-thumb" width="135" height="115"></a>
+        </li>
+        <li>
+          <a href="#"><img src="/assets/portfolio-thumb.jpg" alt="portfolio-thumb" width="135" height="115"></a>
+        </li>
+        <li>
+          <a href="#"><img src="/assets/portfolio-thumb.jpg" alt="portfolio-thumb" width="135" height="115"></a>
+        </li>
+      </ul>
 
-<p>
-  <b>Website:</b>
-  <%= @vendor.website %>
-</p>
+      <h3><p>Featured On:</p></h3>
+      <ul class="featured-on">
+        <li>
+          <a href="#"><img src="/assets/portfolio-thumb.jpg" alt="portfolio-thumb" width="135" height="115"></a>
+        </li>
+        <li>
+          <a href="#"><img src="/assets/portfolio-thumb.jpg" alt="portfolio-thumb" width="135" height="115"></a>
+        </li>
+        <li>
+          <a href="#"><img src="/assets/portfolio-thumb.jpg" alt="portfolio-thumb" width="135" height="115"></a>
+        </li>
+        <li>
+          <a href="#"><img src="/assets/portfolio-thumb.jpg" alt="portfolio-thumb" width="135" height="115"></a>
+        </li>
+      </ul>
+    </section>
 
-<p>
-  <b>Blog:</b>
-  <%= @vendor.blog %>
-</p>
+    <aside class="profile">
+      <p class="back"><a href="#">back to listings</a></p>
+      <h4 class="services">Services starting at: $2,500</h4>
+      <h4>Our style:</h4>
+      <p class="style"><%= @vendor.description %></p>
+      <h4>Get in touch</h4>
+      <ul class="contact">
+        <li><a href="mailto:<%= @vendor.email %>" class="email">Email</a></li>
+        <li><a href="<%= @vendor.website %>" class="website">Website</a></li>
+        <li><a href="<%= @vendor.blog %>" class="blog">Blog</a></li>
+        <li><a href="<%= @vendor.facebook %>" class="facebook">Facebook</a></li>
+        <li><a href="<%= @vendor.twitter %>" class="twitter">Twitter</a></li>
+        <li><a href="<%= @vendor.pineterest %>" class="pinterest">Pinterest</a></li>
+      </ul>
+      <h4>We offer</h4>
+      <ul class="offer">
+        <li>Full service planning</li>
+        <li>Partial serving planning</li>
+        <li>Month of coordination</li>
+      </ul>
+      <div class="share">
+        <p>Share:</p>
+        <ul>
+          <li><a href="#" class="tweet">Tweet</a></li>
+          <li><a href="#" class="pin">Pin</a></li>
+          <li><a href="#" class="like">Like</a></li>
+        </ul>
+      </div>
+      <p class="view-work">See their work on engaged &amp; inspired</p>
+    </aside>
 
-<p>
-  <b>Facebook:</b>
-  <%= @vendor.facebook %>
-</p>
+    <aside class="recommended">
 
-<p>
-  <b>Twitter:</b>
-  <%= @vendor.twitter %>
-</p>
+    </aside>
 
-<p>
-  <b>Pineterest:</b>
-  <%= @vendor.pineterest %>
-</p>
+    <aside>
+      <a href="#"><img src="/assets/banner-survey.png" alt="banner-survey" width="300" height="127"></a>
+    </aside>
+  </div>
 
-
-<%= link_to 'Edit', edit_vendor_path(@vendor) %> |
-<%= link_to 'Back', vendors_path %>
+  <!-- footer -->

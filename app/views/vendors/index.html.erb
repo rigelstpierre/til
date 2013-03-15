@@ -1,7 +1,71 @@
+<div class="blog-container">
 <% @vendors.each do |vendor| %>
-
-<% end %>
     <div class="til-left">
+
+      <div class="med">
+        <% if vendor.fav == true %>
+            <p class="fav">favorite</p>
+        <% end %>
+        <a href="/vendors/<%= vendor.slug %>">
+          <img src="/assets/thumb-med.jpg" alt="thumb-med" width="290" height="250">
+          <span><%= vendor.name %></span>
+        </a>
+      </div>
+    </div>
+<% end %>
+    <aside>
+      <a href="#"><img src="/assets/favs.jpg" alt="favs" width="300" height="100"></a>
+    </aside>
+
+    <aside class="vendors">
+      <h3><p>Find Vendors</p></h3>
+      <form action="">
+        <h4>Location</h4>
+        <input class="search" type="text" placeholder="any city" />
+
+        <h4>Vendor Type</h4>
+        <ul class="radio-group">
+          <li><input type="radio" name="vendor" id="desserts"><label for="desserts">desserts</label></li>
+          <li><input type="radio" name="vendor" id="photographers"><label for="photographers">photographers</label></li>
+          <li><input type="radio" name="vendor" id="florists"><label for="florists">florists</label></li>
+          <li><input type="radio" name="vendor" id="hair-makeup"><label for="hair-makeup">hair &amp; makeup</label></li>
+          <li><input type="radio" name="vendor" id="event-planners"><label for="event-planners">event planners</label></li>
+          <li><input type="radio" name="vendor" id="invitations"><label for="invitations">invitations</label></li>
+          <li><input type="radio" name="vendor" id="caterers"><label for="caterers">caterers</label></li>
+          <li><input type="radio" name="vendor" id="venues"><label for="venues">venues</label></li>
+          <li><input type="radio" name="vendor" id="all"><label for="all">all vendors</label></li>
+        </ul>
+        <h4>Services:</h4>
+        <ul class="radio-group">
+          <li><input type="radio" name="service" id="full"><label for="full">full service planning</label></li>
+          <li><input type="radio" name="service" id="partial"><label for="partial">partial service planning</label></li>
+          <li><input type="radio" name="service" id="month-of"><label for="month-of">month-of coordination</label></li>
+          <li><input type="radio" name="service" id="design"><label for="design">design services</label></li>
+          <li><input type="radio" name="service" id="crafting"><label for="crafting">crafting</label></li>
+        </ul>
+        <h4>Featured on:</h4>
+        <ul class="radio-group">
+          <li><input type="radio" name="featured-on" id="style"><label for="style">style me pretty</label></li>
+          <li><input type="radio" name="featured-on" id="green"><label for="green">green wedding shoes</label></li>
+          <li><input type="radio" name="featured-on" id="layer"><label for="layer">100 layer cake</label></li>
+          <li><input type="radio" name="featured-on" id="martha"><label for="martha">martha stewart</label></li>
+          <li><input type="radio" name="featured-on" id="chicks"><label for="chicks">wedding chicks</label></li>
+          <li><input type="radio" name="featured-on" id="brides"><label for="brides">brides magazine</label></li>
+        </ul>
+        <h4>Budget:</h4>
+        <input class="min" type="text" placeholder="min budget" />
+        <input class="max" type="text" placeholder="max budget" />
+      </form>
+
+      <p class="reset"><a href="#">reset filters</a></p>
+    </aside>
+</div>
+
+    <!-- <aside class="ads">
+      <img src="/assets/sponsors.jpg" alt="sponsors" width="300" height="100">
+    </aside> -->
+  </div>
+   <!--  <div class="til-left">
       <div class="med">
         <p class="fav">favorite</p>
         <a href="#">
@@ -36,3 +100,4 @@
 
     </div>
 
+ -->
