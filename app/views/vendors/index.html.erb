@@ -8,7 +8,7 @@
         <% end %>
         <a href="/vendors/<%= vendor.slug %>">
           <% if vendor.image.present? %>
-
+            <%= image_tag("vendor.image") %>
           <% else %>
             <img src="/assets/thumb-med.jpg" alt="thumb-med" width="290" height="250"> <!-- remove for production/once imagemagik is fixed -->
           <% end %>
